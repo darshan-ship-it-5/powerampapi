@@ -9,7 +9,7 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - uses: android-actions/setup-android@v3
+      - run: yes | sdkmanager --licenses || true
       - run: touch local.properties
       - run: chmod +x gradlew && ./gradlew :poweramp_skin_sample:assembleDebug
       - uses: actions/upload-artifact@v4
