@@ -11,8 +11,9 @@ jobs:
           java-version: 17
       - run: yes | sdkmanager --licenses || true
       - run: touch local.properties
-      - run: chmod +x gradlew && ./gradlew :poweramp_skin_sample:assembleDebug
+      - run: keytool -genkeypair -keystore skin.jks -storepass skinpass123 -keypass skinpass123 -alias skin -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Darshan Skin"
+      - run: chmod +x gradlew && ./gradlew :poweramp_skin_sample:assembleRelease
       - uses: actions/upload-artifact@v4
         with:
           name: amoled-skin
-          path: poweramp_skin_sample/build/outputs/apk/debug/*.apk
+          path: poweramp_skin_sample/build/outputs/apk/release/*.apk
