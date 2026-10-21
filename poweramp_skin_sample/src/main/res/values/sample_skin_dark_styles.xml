@@ -1,18 +1,17 @@
-<style name="SampleSkinDark" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
-	<!-- Pure black backgrounds -->
-	<item name="com.maxmpz.audioplayer:colorAABgColor">#000000</item>
-	<item name="com.maxmpz.audioplayer:colorBgPrimary">#000000</item>
-	<item name="com.maxmpz.audioplayer:colorBgNavbar">#000000</item>
-	<item name="com.maxmpz.audioplayer:colorBgLight">#0A0A0A</item>
-	<item name="com.maxmpz.audioplayer:colorBgPositive">#0A0A0A</item>
-	<item name="com.maxmpz.audioplayer:colorPrimary">#000000</item>
+<?xml version="1.0" encoding="utf-8"?>
 
-	<!-- Lines and dividers -->
-	<item name="com.maxmpz.audioplayer:colorSeparator">#1A1A1A</item>
-	<item name="com.maxmpz.audioplayer:colorStroke">#2A2A2A</item>
-
-	<!-- Accent -->
-	<item name="com.maxmpz.audioplayer:colorAccent">#00E5FF</item>
-	<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#00E5FF</item>
-	<item name="com.maxmpz.audioplayer:colorKnobIndicator">#00E5FF</item>
-</style>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceCycle, NewApi">
+	<style name="SampleSkinDark" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
+		<item name="com.maxmpz.audioplayer:colorAABgColor">#000000</item>
+		<item name="com.maxmpz.audioplayer:colorBgPrimary">#000000</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#000000</item>
+		<item name="com.maxmpz.audioplayer:colorBgLight">#0A0A0A</item>
+		<item name="com.maxmpz.audioplayer:colorBgPositive">#0A0A0A</item>
+		<item name="com.maxmpz.audioplayer:colorPrimary">#000000</item>
+		<item name="com.maxmpz.audioplayer:colorSeparator">#1A1A1A</item>
+		<item name="com.maxmpz.audioplayer:colorStroke">#2A2A2A</item>
+		<item name="com.maxmpz.audioplayer:colorAccent">#00E5FF</item>
+		<item name="com.maxmpz.audioplayer:colorSeekbarThumb">#00E5FF</item>
+		<item name="com.maxmpz.audioplayer:colorKnobIndicator">#00E5FF</item>
+	</style>
+</resources>
