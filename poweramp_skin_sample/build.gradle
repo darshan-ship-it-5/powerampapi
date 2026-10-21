@@ -50,5 +50,22 @@ android {
 
         params += ["--emit-ids", "${projectDir}/stable-ids.txt", "--package-id", "0x80",  "-I", "${projectDir}/../${paResources}"]
 
-        if(project.file("stable-ids.txt").exists()) 
-        
+        if(project.file("stable-ids.txt").exists()) {
+            println "Got stable-ids OK"
+            params += ["--stable-ids", "${projectDir}/stable-ids.txt"]
+        } else {
+            println "WARNING: no stable-ids.txt specified"
+        }
+
+        additionalParameters = params
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+}
+
+dependencies {
+    implementation project(path: ':poweramp_api_lib')
+    implementation libs.androidx.appcompat.resources
+    implementation libs.androidx.core.ktx
+}
