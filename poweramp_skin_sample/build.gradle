@@ -50,4 +50,5 @@ android {
 
         params += ["--emit-ids", "${projectDir}/stable-ids.txt", "--package-id", "0x80",  "-I", "${projectDir}/../${paResources}"]
 
-        if(project.file("stable-ids.txt").exists()) {
+        if(project.file("stable-ids.txt").exists()) 
+        
